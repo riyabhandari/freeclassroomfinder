@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="521.0" prefWidth="958.0" style="-fx-background-color: rgba(0, 0, 0, 0);" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+    <children>
+        <AnchorPane fx:id="anchorPane1" layoutY="-53.0" prefHeight="574.0" prefWidth="958.0">
+            <children>
+                <AnchorPane layoutY="93.0" prefHeight="449.0" prefWidth="893.0" style="-fx-background-color: #FFF; -fx-background-radius: 0.2em;">
+                    <children>
+                        <JFXButton fx:id="btn_signin" layoutY="111.0" mnemonicParsing="false" onAction="#onclick" prefHeight="43.0" prefWidth="121.0" ripplerFill="#6677e3" text="Sign In" />
+                        <JFXButton fx:id="btn_signup" layoutY="154.0" mnemonicParsing="false" onAction="#onclick" prefHeight="43.0" prefWidth="121.0" ripplerFill="#6677e3" text="Sign Up" />
+                        <AnchorPane fx:id="pn_signup" layoutX="562.0" layoutY="1.0" prefHeight="426.0" prefWidth="363.0" style="-fx-background-color: #FFF;">
+                            <children>
+                                <JFXTextField fx:id="signup_email" labelFloat="true" layoutX="42.0" layoutY="78.0" prefHeight="43.0" prefWidth="297.0" promptText="Email">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXTextField fx:id="signup_name" labelFloat="true" layoutX="42.0" layoutY="170.0" prefHeight="43.0" prefWidth="297.0" promptText="Name">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXPasswordField fx:id="signup_password" labelFloat="true" layoutX="42.0" layoutY="265.0" prefHeight="43.0" prefWidth="297.0" promptText="Password">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXPasswordField>
+                                <JFXButton fx:id="btn_signupscreen" contentDisplay="GRAPHIC_ONLY" layoutX="156.0" layoutY="355.0" mnemonicParsing="false" onAction="#onclick" text="Button">
+                                    <graphic>
+                                        <FontAwesomeIconView fill="#263238" glyphName="CHEVRON_CIRCLE_RIGHT" size="40" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    </graphic>
+                                </JFXButton>
+                                <Label layoutX="145.0" layoutY="36.0" text="Sign Up" textFill="#263238">
+                                    <font>
+                                        <Font size="21.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="pn_signin" layoutX="563.0" prefHeight="426.0" prefWidth="356.0" style="-fx-background-color: #FFF;">
+                            <children>
+                                <JFXTextField fx:id="email" labelFloat="true" layoutX="33.0" layoutY="124.0" prefHeight="43.0" prefWidth="297.0" promptText="Email">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXPasswordField fx:id="password" labelFloat="true" layoutX="30.0" layoutY="213.0" prefHeight="43.0" prefWidth="297.0" promptText="Password">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXPasswordField>
+                                <JFXButton fx:id="btn_login" contentDisplay="GRAPHIC_ONLY" layoutX="156.0" layoutY="318.0" mnemonicParsing="false" onAction="#onclick" text="Button">
+                                    <graphic>
+                                        <FontAwesomeIconView fill="#263238" glyphName="CHEVRON_CIRCLE_RIGHT" size="40" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                                    </graphic>
+                                </JFXButton>
+                                <Label layoutX="145.0" layoutY="42.0" text="Sign In" textFill="#263238">
+                                    <font>
+                                        <Font size="21.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane layoutX="121.0" prefHeight="574.0" prefWidth="442.0" style="-fx-background-color: #263238;">
+                    <children>
+                        <FontAwesomeIconView glyphName="MODX" layoutX="186.0" layoutY="257.0" size="70" strokeType="OUTSIDE" strokeWidth="0.0">
+                            <fill>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop color="#0288d1" />
+                                        <Stop color="#00f2ff" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </fill>
+                            <stroke>
+                                <LinearGradient endX="1.0" endY="1.0">
+                                    <stops>
+                                        <Stop color="#0277bd" />
+                                        <Stop color="#0277bd" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </stroke></FontAwesomeIconView>
+                        <Label layoutX="161.0" layoutY="332.0" text="manage your schedule with ease" textFill="WHITE" />
+                        <Label layoutX="135.0" layoutY="267.0" text=" Free Classroom ">
+                            <font>
+                                <Font size="35.0" />
+                            </font>
+                            <textFill>
+                                <LinearGradient endY="1.0" startY="1.0">
+                                    <stops>
+                                        <Stop color="#0277bd" />
+                                        <Stop color="#00f2ff" offset="1.0" />
+                                    </stops>
+                                </LinearGradient>
+                            </textFill>
+                        </Label>
+                        <Label layoutX="278.0" layoutY="305.0" text="PRO" textFill="RED">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                     <padding>
+                        <Insets left="90.0" />
+                     </padding>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <JFXButton fx:id="close" contentDisplay="GRAPHIC_ONLY" layoutX="895.0" layoutY="98.0" mnemonicParsing="false" onAction="#onclick" prefHeight="17.0" prefWidth="24.0" ripplerFill="RED" text="Button" textFill="#1e1d1d">
+                    <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../sample/img/delete-cross.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+        <StackPane fx:id="main" layoutX="350.0" layoutY="170.0" prefHeight="17.0" prefWidth="8.0" />
+    </children>
+</AnchorPane>

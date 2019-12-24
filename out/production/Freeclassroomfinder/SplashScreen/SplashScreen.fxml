@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="574.0" prefWidth="926.0" style="-fx-background-color: rgba(0, 0, 0, 0);" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SplashScreen.SplashScreenController">
+    <children>
+        <AnchorPane prefHeight="574.0" prefWidth="926.0" style="-fx-background-color: #263238;">
+            <children>
+                <FontAwesomeIconView glyphName="MODX" layoutX="428.0" layoutY="257.0" size="70" strokeType="OUTSIDE" strokeWidth="0.0" text="">
+                    <fill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#0288d1" />
+                                <Stop color="#00f2ff" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </fill>
+                    <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                            <stops>
+                                <Stop color="#0277bd" />
+                                <Stop color="#0277bd" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </stroke>
+                </FontAwesomeIconView>
+                <Label layoutX="354.0" layoutY="327.0" text="manage your schedule with ease" textFill="WHITE" />
+                <Label layoutX="292.0" layoutY="262.0" text="FREE CLASSROOM ">
+                    <font>
+                        <Font size="35.0" />
+                    </font>
+                    <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startY="1.0">
+                            <stops>
+                                <Stop color="#0277bd" />
+                                <Stop color="#00f2ff" offset="1.0" />
+                            </stops>
+                        </LinearGradient>
+                    </textFill>
+                </Label>
+                <Label layoutX="571.0" layoutY="300.0" text="PRO" textFill="RED">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

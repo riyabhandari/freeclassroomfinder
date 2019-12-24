@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Schedule.ViewDetailController">
+    <children>
+        <AnchorPane fx:id="anchorpane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #FFFFBD;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <TableView fx:id="tableview" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="branchcol" prefWidth="88.0" text="Branch" />
+                        <TableColumn fx:id="daycol" prefWidth="97.0" text="Day" />
+                        <TableColumn fx:id="lecture1col" prefWidth="101.0" text="Lecture1" />
+                        <TableColumn fx:id="lecture2col" minWidth="0.0" prefWidth="90.0" text="Lecture2" />
+                        <TableColumn fx:id="lecture3col" minWidth="0.0" prefWidth="98.0" text="Lecture3" />
+                        <TableColumn fx:id="lecture4col" minWidth="0.0" prefWidth="98.0" text="Lecture4" />
+                  <TableColumn fx:id="lecture5col" minWidth="0.0" prefWidth="102.0" text="Lecture5" />
+                  <TableColumn fx:id="lecture6col" minWidth="0.0" prefWidth="102.0" text="Lecture6" />
+                    </columns>
+                    <contextMenu>
+                        <ContextMenu>
+
+                        </ContextMenu>
+                    </contextMenu>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

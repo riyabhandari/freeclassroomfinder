@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="491.0" prefWidth="354.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UpdateFreeRoom.UpdateFreeRoomController">
+    <children>
+        <AnchorPane fx:id="anchorpane" prefHeight="425.0" prefWidth="354.0">
+            <children>
+                <JFXTextField fx:id="Lecture" labelFloat="true" layoutX="42.0" layoutY="38.0" prefHeight="41.0" prefWidth="268.0" promptText="Lecture">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </JFXTextField>
+                <JFXTextField fx:id="Mon" labelFloat="true" layoutX="42.0" layoutY="94.0" prefHeight="41.0" prefWidth="268.0" promptText="Mon">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </JFXTextField>
+                <JFXTextField fx:id="Tue" labelFloat="true" layoutX="42.0" layoutY="153.0" prefHeight="41.0" prefWidth="268.0" promptText="Tue">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="Wed" labelFloat="true" layoutX="42.0" layoutY="216.0" prefHeight="41.0" prefWidth="268.0" promptText="Wed">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </JFXTextField>
+                <JFXTextField fx:id="Fri" labelFloat="true" layoutX="38.0" layoutY="323.0" prefHeight="41.0" prefWidth="268.0" promptText="Fri">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXTextField>
+                <JFXTextField fx:id="Thu" labelFloat="true" layoutX="38.0" layoutY="270.0" prefHeight="41.0" prefWidth="268.0" promptText="Thu">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </JFXTextField>
+                <HBox layoutY="425.0" prefHeight="64.0" prefWidth="351.0">
+                    <children>
+                        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#savebutton" prefHeight="67.0" prefWidth="185.0" style="-fx-background-color: #2196F3;" text="Save" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" mnemonicParsing="false" onAction="#cancelbutton" prefHeight="67.0" prefWidth="171.0" style="-fx-background-color: #2196F3;" text="Cancel" textFill="WHITE">
+                            <font>
+                                <Font size="25.0" />
+                            </font>
+                        </JFXButton>
+                    </children>
+                </HBox>
+
+
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

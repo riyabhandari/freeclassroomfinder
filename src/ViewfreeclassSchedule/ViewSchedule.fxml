@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<?import javafx.scene.control.MenuItem?>
+<StackPane fx:id="stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewfreeclassSchedule.ViewScheduleController">
+    <children>
+        <AnchorPane fx:id="anchorpane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #FFFFBD;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <TableView fx:id="tableview" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columns>
+                        <TableColumn fx:id="lecturecol" prefWidth="82.0" text="Lecture" />
+                        <TableColumn fx:id="moncol" prefWidth="153.0" text="Mon" />
+                        <TableColumn fx:id="tuecol" prefWidth="140.0" text="Tue" />
+                        <TableColumn fx:id="wedcol" minWidth="0.0" prefWidth="144.0" text="Wed" />
+                        <TableColumn fx:id="thucol" minWidth="0.0" prefWidth="138.0" text="Thu" />
+                  <TableColumn fx:id="fricol" minWidth="0.0" prefWidth="157.0" text="Fri" />
+                    </columns>
+                    <contextMenu>
+                        <ContextMenu>
+                                <items>
+                                    <MenuItem mnemonicParsing="false" onAction="#freeroomedit" text="Edit" />
+                                    <MenuItem mnemonicParsing="false" onAction="#roomrefresh" text="Refresh" />
+                                </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
